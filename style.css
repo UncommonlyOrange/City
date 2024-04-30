@@ -1,0 +1,152 @@
+
+body{
+  background-color: black;
+  overflow: hidden;
+}
+
+.container{
+  background-image: linear-gradient(black 4%, darkslateblue 4%, midnightblue 15%, black);
+  background-color: midnightblue;
+  width: 184vh;
+  height: 98vh;
+}
+
+.bluebox{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 5px auto;
+}
+.bluebox > div{
+  z-index: 1;
+  background-color: grey;
+  width: 100px;
+  min-height: 60px;
+  margin: 5px;
+}
+
+
+.columns{
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  border: 8px solid black;
+}
+.columns > div{
+  background-color: black;
+  border: 2px solid lightgrey;
+  width: 100px;
+  height: 50px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+
+
+
+.sun{
+  background-image: radial-gradient(circle at bottom left, rgb(250, 169, 76), yellow 40%, rgba(255, 230, 0, 0.733), transparent 50%);
+  width: 300px;
+  height: 300px;
+  border-top-right-radius: 100%;
+  position: relative;
+  top: -300px;
+  cursor: pointer;
+}
+.daysky{
+  background-image: linear-gradient(#222 4%, lightskyblue 4%, cornflowerblue);
+}
+.eveningsky{
+  background-image: linear-gradient(#444 4%, orange 4%, orangered, purple);
+}
+.eveningsun{
+  background-image: radial-gradient(yellow, orange, rgba(255, 102, 0, 0.718), orangered);
+  background-size: 175px;
+  background-position: center;
+  background-color: ;
+  transform: rotate();
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  top: -300px;
+  left: 1200px;
+  cursor: pointer;
+}
+
+.nightsky {
+  background-image: linear-gradient(black 4%, darkslateblue 4%, midnightblue 15%, black);
+}
+.stars {
+  background-image: url('stars.png');
+}
+
+.moon{
+  background-image: radial-gradient(transparent, black), url('./Moon.jpg');
+  background-size: 175px;
+  background-position: center;
+  background-color: ;
+  transform: rotate();
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  top: -300px;
+  left: 1200px;
+  cursor: pointer;
+}
+
+.disappear{
+  display: none;
+}
+
+.owl, .owlTurnHead{
+  position: absolute;
+  top: 250px;
+  width: 150px;
+  transform: rotate(180deg) scaleX(-1);
+  cursor: pointer;
+}
+
+
+.mystyle{
+  background-color: lightgoldenrodyellow !important;
+}
+
+
+
+
+
+
+.car-container {
+  position: absolute;
+  top: 0px;
+  right: 120%;
+  z-index: 1;
+  transform: scaleY(-1);
+  animation: movecar 50s ease-in infinite;
+}
+
+.car {
+  position: relative;
+  width: 100px;
+}
+
+#car2 {
+  position: relative;
+  margin-right: 100px;
+  bottom: -10px;
+  transform: scaleX(-1);
+  animation: movecar 27.8s ease-in infinite;
+  background-blend-mode: darken;
+}
+
+
+@keyframes movecar {
+  from {right: 140%;}
+  to {right: -280%;}
+}
+
+
+
+
